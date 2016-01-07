@@ -44,13 +44,16 @@ The heuristic used for this program is found in State.calculateRemainingCost(). 
 In order to get an idea of how well this solution works for a variety of problems, random initial and solution states were generated for various numbers of trucks, packages, and map sizes, to analyze general performance. Performance was measured in terms of the number of states that were generated in order to find a solution. Since the number of states generated is the most quickly growing part of the program, it provides a decent estimation of the computation time, and can easily be compared to the theoretical worst case. 
 Below are the performance results of these problems, grouped by number of packages:
 
- 
+![](http://joshheinrichs.github.io/cmpt317-assignment1/fig1.png)
 fig. 1
  
+![](http://joshheinrichs.github.io/cmpt317-assignment1/fig2.png)
 fig.2
  
+![](http://joshheinrichs.github.io/cmpt317-assignment1/fig3.png)
 fig. 3
  
+![](http://joshheinrichs.github.io/cmpt317-assignment1/fig4.png)
 fig. 4
 
 Sample Output

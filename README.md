@@ -1,7 +1,7 @@
 # The N-K Problem
 
 ###Problem
-Given N vehicles and K packages, each of which is currently located at some point within a city which has M locations, the goal is to find the best route for each vehicle such that all packages are delivered to their predetermined destination in the shortest amount of time possible. In other words, the goal is to minimize longest single package delivery, meaning that all packages are delivered within a reasonable time period. A vehicle is capable of carrying any number of packages at one time.
+Given N vehicles and K packages, each of which is currently located at some point within a city which has M locations, the goal is to find the best route for each vehicle such that all packages are delivered to their predetermined destination in the shortest amount of time possible. In other words, the goal is to minimize longest single package delivery, meaning that all packages are delivered within a reasonable time period. A vehicle is capable of carrying any number of packages at a time.
 
 ###Solution
 In order to solve this problem, I decided to use a state space search, more specifically, A*. In order to implement this, the problem needs to be describable in a series of states, each of which has a set of actions which transition to adjacent states, an associated cost of reaching that state, as well as an initial and goal state. These requirements are detailed below.

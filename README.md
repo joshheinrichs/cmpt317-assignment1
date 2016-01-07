@@ -56,7 +56,7 @@ fig. 3
 ![](http://joshheinrichs.github.io/cmpt317-assignment1/fig4.png)
 fig. 4
 
-Sample Output
+#####Sample Output
 ```
 Number of trucks: 2
 Number of packages: 2

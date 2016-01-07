@@ -1,4 +1,4 @@
-# cmpt317-assignment1
+# The N-K Problem
 
 ###Problem Description
 Given N vehicles and K packages, each of which is currently located at some point within a city which has M locations, the goal is to find the best route for each vehicle such that all packages are delivered to their predetermined destination in the shortest amount of time possible. In other words, the goal is to minimize longest single package delivery, meaning that all packages are delivered within a reasonable time period. A vehicle is capable of carrying any number of packages at one time.

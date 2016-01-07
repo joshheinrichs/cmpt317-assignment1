@@ -1,9 +1,9 @@
 # The N-K Problem
 
-###Problem Description
-Given N vehicles and K packages, each of which is currently located at some point within a city which has M locations, the goal is to find the best route for each vehicle such that all packages are delivered to their predetermined destination in the shortest amount of time possible. In other words, the goal is to minimize longest single package delivery, meaning that all packages are delivered within a reasonable time period. A vehicle is capable of carrying any number of packages at one time.
+###Problem
+Given N vehicles and K packages, each of which is currently located at some point within a city which has M locations, the goal is to find the best route for each vehicle such that all packages are delivered to their predetermined destination in the shortest amount of time possible. In other words, the goal is to minimize longest single package delivery, meaning that all packages are delivered within a reasonable time period. A vehicle is capable of carrying any number of packages at a time.
 
-###Solution Description
+###Solution
 In order to solve this problem, I decided to use a state space search, more specifically, A*. In order to implement this, the problem needs to be describable in a series of states, each of which has a set of actions which transition to adjacent states, an associated cost of reaching that state, as well as an initial and goal state. These requirements are detailed below.
 
 #####State
@@ -24,7 +24,7 @@ This checks whether the state matches the goal, where each package is at its des
 #####Path Cost
 Each step has a cost of one, representing one unit of time. It is assumed that all actions, whether moving a block in the city or picking up or dropping off a package all take the same amount of time.
  
-###Implementation Description
+###Implementation
 To implement the project, I decided used Java, as it had all of the required data structures available either natively (in the case of priority queues) or through well-documented libraries such as JGraphT (in the case of graphs).  The two custom sets of data which I had to implement myself were State and Location.
 
 The Location object is mostly a pretty basic integer x and y location, with a function capable of calculating the Manhattan distance from that Location to another given Location, which is used in estimating the future cost for a given state. Aside from this, the rest of the program is located within the State object.

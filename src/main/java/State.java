@@ -1,15 +1,9 @@
-package main;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Random;
-import java.util.Scanner;
-
-import org.jgraph.graph.DefaultEdge;
 import org.jgrapht.UndirectedGraph;
 import org.jgrapht.alg.NeighborIndex;
+import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleGraph;
+
+import java.util.*;
 
 public class State implements Comparable<State> {
 
@@ -370,7 +364,6 @@ public class State implements Comparable<State> {
 	 * Compares states by their estimated total cost. If equal, it then compares
 	 * the states by the number of moves taken
 	 */
-	@Override
 	public int compareTo(State o) {
 		if (this.getTotalCost() - o.getTotalCost() != 0) {
 			return this.getTotalCost() - o.getTotalCost();

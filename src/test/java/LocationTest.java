@@ -1,9 +1,7 @@
-package test;
 
-import static org.junit.Assert.*;
-import main.Location;
 
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class LocationTest {
 
